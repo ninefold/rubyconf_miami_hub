@@ -2,7 +2,9 @@
 source "https://rubygems.org"
 
 gem "rails", "3.2.14"
-gem "middleman"
+gem "sass-rails"
+gem "middleman", "~>3.1.4"
+
 gem "middleman-livereload"
 gem 'bootstrap-sass', github: 'thomas-mcdonald/bootstrap-sass'
 
