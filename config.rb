@@ -44,6 +44,28 @@
 #     "Helping"
 #   end
 # end
+
+require 'helpers/planner'
+helpers TheHub::Helpers
+
+helpers do
+  def days
+    %w{ Thursday Friday Saturday Sunday}
+  end
+
+  def planner_classes(metadata)
+    [planner_type(metadata), planner_room(metadata)]
+  end
+
+  def planner_type(metadata)
+    metadata.type
+  end
+
+  def planner_room(metadata)
+    metadata.room.downcase if metadata.room
+  end
+end
+
 set :slim, {
   :format  => :html5,
   :attr_wrapper => '"',

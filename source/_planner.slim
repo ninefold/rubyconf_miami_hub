@@ -1,0 +1,10 @@
+h2 Sidebar goes here
+
+ul.nav.nav-pills#plannerTab
+  - planner.days.each do |day|
+    li class=('active' if day.active?)
+      a href='##{day.code}' data-toggle="pill"
+        == day.shortname
+
+.tab-content
+  = partial 'planner/day', :collection => planner.days

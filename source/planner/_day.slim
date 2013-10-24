@@ -1,0 +1,11 @@
+.tab-pane id="#{day.code}" class=('active' if day.active?)
+  - day.sessions.each do |s|
+    .session
+      h3 = s.time
+      - if s.breakout
+        .planner_item.breakout == s.breakout
+      - s.sorted_talks.each do |t|
+        .planner_item class=*planner_classes(t.data)
+          .talk_room == t.data.room
+          .talk_title == t.data.title
+          .speaker == t.data.speaker
