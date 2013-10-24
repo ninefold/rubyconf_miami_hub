@@ -36,6 +36,10 @@ module TheHub
     def days
       @days.map {|day| Day.new day, @sitemap}
     end
+
+    def to_hash
+      {days: days}
+    end
   end
 
   module Helpers
@@ -76,6 +80,14 @@ module TheHub
         []
       end
     end
+
+    def to_hash
+      {
+        :sessions => sessions,
+        :name     => @name,
+        :code     => code,
+      }
+    end
   end
 
   class Session
@@ -99,6 +111,13 @@ module TheHub
     def breakout
       TheHub::BREAKOUTS.fetch(@day, {})[@time]
     end
+
+    def to_hash
+      {
+        :talks => sorted_talks,
+        :breakout => breakout
+      }
+    end
   end
 
   class Talk
@@ -112,6 +131,14 @@ module TheHub
 
     def room
       data.room
+    end
+
+    def to_hash
+      {
+        :speaker => data.speaker,
+        :title   => data.title,
+        :room    => data.room
+      }
     end
   end
 end
