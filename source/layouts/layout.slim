@@ -31,7 +31,9 @@ html.no-js lang="#{data.site.lang}"
     == stylesheet_link_tag 'application'
 
     == javascript_include_tag 'application'
-
+    script type="text/javascript" src="//use.typekit.net/otb8ewv.js"
+    javascript:
+      {Typekit.load();}catch(e){}
     javascript:
       var _gaq = _gaq || [];
       _gaq.push(['_setAccount', '#{data.site.google_analytics_id}']);

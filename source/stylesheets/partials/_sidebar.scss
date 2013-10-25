@@ -1,0 +1,19 @@
+#sidebar {
+	background-color: $lightestGray;
+
+}
+
+.nav-pills {
+	background-color: $white;
+	border: 1px solid $lightGray;
+}
+
+.nav-pills > li.active > a {
+	background-color: $green;
+	border-radius: 0;
+	border: 1px solid $darkGreen;
+	&:hover {
+		background-color: $lightGreen;
+		border: 1px solid $green;
+	}
+}
