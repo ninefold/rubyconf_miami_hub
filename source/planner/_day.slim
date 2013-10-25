@@ -11,14 +11,4 @@
     .session
       .time-row
         h3 = s.time
-      - if s.breakout
-        .planner_item.breakout == s.breakout
-      - s.sorted_talks.each do |t|
-        a.planner_item class=*planner_classes(t.data) 
-          div.item-container
-            .talk_room == t.data.room 
-            .talk_title == t.data.title
-            | by&nbsp;
-            span.speaker == t.data.speaker
-          div.forward-arrow 
-            <i class="fa fa-chevron-right"></i>
+      == partial("planner/#{s.type}", :object => s) if s.type

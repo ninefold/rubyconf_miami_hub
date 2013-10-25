@@ -1,0 +1,5 @@
+- talks.sorted_talks.each do |t|
+  .planner_item class=*planner_classes(t.data)
+    .talk_room == t.data.room
+    .talk_title == t.data.title
+    .speaker == t.data.speaker

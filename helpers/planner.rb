@@ -108,6 +108,12 @@ module TheHub
       @time, @day, @query = time, day, query
     end
 
+    def type
+      return 'breakout' if breakout
+      return 'talks' if talks.present?
+      return 'keynote' if keynote
+    end
+
     def talks_by_room room
       talks.detect {|t| t.room == room}
     end
@@ -123,6 +129,11 @@ module TheHub
     def breakout
       TheHub::BREAKOUTS.fetch(@day, {})[@time]
     end
+
+    def keynote
+      Talk.new @query.where(:type => 'keynote').first if @query.where(:type => 'keynote').first
+    end
+
 
     def to_hash
       {
