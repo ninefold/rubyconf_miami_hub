@@ -81,6 +81,18 @@ module TheHub
       end
     end
 
+    def pre_events
+      events.select {|e| e.pre? }
+    end
+
+    def post_events
+      evets.select {|e| e.post?}
+    end
+
+    def events
+      query.where(:type => 'event').all.map {|e| Event.new e}
+    end
+
     def to_hash
       {
         :sessions => sessions,
@@ -120,7 +132,7 @@ module TheHub
     end
   end
 
-  class Talk
+  class Item
     def initialize resource
       @resource = resource
     end
@@ -129,6 +141,12 @@ module TheHub
       @resource.data
     end
 
+    def title
+      data.title
+    end
+  end
+
+  class Talk < Item
     def room
       data.room
     end
@@ -139,6 +157,28 @@ module TheHub
         :title   => data.title,
         :room    => data.room
       }
+    end
+  end
+
+  class Event < Item
+    def start_time
+      data.start_time
+    end
+
+    def end_time
+      data.end_time
+    end
+
+    def pre?
+      data.when == 'pre'
+    end
+
+    def post?
+      data.when == 'post'
+    end
+
+    def location
+      data.location
     end
   end
 end
