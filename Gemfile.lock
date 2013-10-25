@@ -16,7 +16,7 @@ GIT
 
 GIT
   remote: git://github.com/mootpointer/middleman.git
-  revision: 2e70cc5d99123ae1f20badadefe6000e32295516
+  revision: e8de5907fafa5d7488e4224eaf463872be0250d6
   specs:
     middleman (3.1.6)
       coffee-script (~> 2.2.0)

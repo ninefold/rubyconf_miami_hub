@@ -123,15 +123,19 @@ module TheHub
     end
 
     def talks
-      @query.where(:type => 'talk', :session => @time).all.map {|t| Talk.new t}
+      query.where(:type => 'talk').all.map {|t| Talk.new t}
     end
 
     def breakout
       TheHub::BREAKOUTS.fetch(@day, {})[@time]
     end
 
+    def query
+      @query.where(:session => @time)
+    end
+
     def keynote
-      Talk.new @query.where(:type => 'keynote').first if @query.where(:type => 'keynote').first
+      Talk.new query.where(:type => 'keynote').first if query.where(:type => 'keynote').first
     end
 
 
