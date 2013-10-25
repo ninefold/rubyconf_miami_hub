@@ -1,11 +1,21 @@
+@import "layouts.scss";
+
 #sidebar {
 	background-color: $lightestGray;
 	padding-top: 50px;
 }
 
+.title-sidebar {
+	@extend h2;
+}
+
 .nav-pills {
-	background-color: $white;
+	background-color: $lightestGray;
 	border: 1px solid $lightGray;
+
+	li {
+		margin-left: 0;
+	}
 }
 
 .nav-pills > li >a {
@@ -35,7 +45,7 @@
 	padding: 10px 20px;
 }
 
-.session,  {
+.session, .events {
 	.time-row {
 		background-color: $lightestGreen;
 	}
@@ -47,7 +57,7 @@
 		display: block;
 		color: $gray;
 		i {
-			color: $lightGray;
+			color: $gray;
 		}
 		&:hover{
 			text-decoration: none;

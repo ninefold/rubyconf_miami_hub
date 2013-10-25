@@ -22,13 +22,13 @@ body {
 }
 
 // Typography
-h1, h2, h3, h4, h5 { margin: 0;}
+h2, h3, h4, h5 { margin: 0;}
 
 h1 {
 	font-family: $serifFont;
 	font-size: 30px;
 	font-weight: 600;
-	line-height: 1.5em;
+	line-height: 2em;
 	color: $green;
 }
 
@@ -37,6 +37,14 @@ h2 {
 	font-size: 16px;
 	line-height: 1.5em;
 	font-weight: 800;
+	text-transform: uppercase;
+	margin-bottom: 10px;
+}
+
+p {
+	font-family: $sansSerifFont;
+	font-weight: 500;
+	line-height: 1.5em;
 }
 
 // Social Content 
@@ -52,14 +60,19 @@ h2 {
 	background-repeat: no-repeat;
 	background-position: center top;
 	margin-bottom: 0;
+	padding-top: 40px;
 }
 
 .header-identity {
-	padding-top: 40px;
 	float: left;
 }
 
 .miami-tips {
+	
+	h2 {
+		color: $green;
+		text-transform: uppercase;
+	}
 	color: $white;
 }
 
