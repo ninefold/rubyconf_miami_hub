@@ -1,16 +1,21 @@
 .tab-pane id="#{day.code}" class=('active' if day.active?)
-  .events.pre-events
+  a.events.pre-events
     - day.pre_events.each do |e|
       .planner-item.event
         h3 = e.title
         .event-location = e.location
   - day.sessions.each do |s|
     .session
-      h3 = s.time
+      .time-row
+        h3 = s.time
       - if s.breakout
         .planner_item.breakout == s.breakout
       - s.sorted_talks.each do |t|
-        .planner_item class=*planner_classes(t.data)
-          .talk_room == t.data.room
-          .talk_title == t.data.title
-          .speaker == t.data.speaker
+        a.planner_item class=*planner_classes(t.data) 
+          div.item-container
+            .talk_room == t.data.room 
+            .talk_title == t.data.title
+            | by&nbsp;
+            span.speaker == t.data.speaker
+          div.forward-arrow 
+            <i class="fa fa-chevron-right"></i>

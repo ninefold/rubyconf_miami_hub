@@ -17,19 +17,51 @@ body * {
 }
 
 body {
-  padding-top: 60px;
-  padding-bottom: 40px;
+  //padding-top: 60px;
+  //padding-bottom: 40px;
 }
 
 // Typography
-h1 {}
-h2 {
-	font-family: $sansSerifFont;
+h1, h2, h3, h4, h5 { margin: 0;}
+
+h1 {
+	font-family: $serifFont;
+	font-size: 30px;
+	font-weight: 600;
+	line-height: 1.5em;
+	color: $green;
 }
 
+h2 {
+	font-family: $sansSerifFont;
+	font-size: 16px;
+	line-height: 1.5em;
+	font-weight: 800;
+}
+
+// Social Content 
+#social-content {
+	padding-top: 50px;
+}
 
 // Navigation
+.navbar {
+	height: 246px;
+	background-color: $black;
+	background-image: url('../images/header-facet.png');
+	background-repeat: no-repeat;
+	background-position: center top;
+	margin-bottom: 0;
+}
 
+.header-identity {
+	padding-top: 40px;
+	float: left;
+}
+
+.miami-tips {
+	color: $white;
+}
 
 
 

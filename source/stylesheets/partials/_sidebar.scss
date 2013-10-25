@@ -1,6 +1,6 @@
 #sidebar {
 	background-color: $lightestGray;
-
+	padding-top: 50px;
 }
 
 .nav-pills {
@@ -8,12 +8,80 @@
 	border: 1px solid $lightGray;
 }
 
+.nav-pills > li >a {
+	border-radius: 0;
+} 
+
 .nav-pills > li.active > a {
 	background-color: $green;
-	border-radius: 0;
 	border: 1px solid $darkGreen;
 	&:hover {
 		background-color: $lightGreen;
 		border: 1px solid $green;
 	}
 }
+
+.tab-pane {
+	border: 1px solid $lightGray;
+	margin: 30px 0 0 0;
+}
+
+.planner-item, .session {
+	border-bottom:1px solid $lightGray;
+	background-color: $white;
+}
+
+.time-row, .planner_item, .event {
+	padding: 10px 20px;
+}
+
+.session,  {
+	.time-row {
+		background-color: $lightestGreen;
+	}
+	h3 {
+		font-size: 14px;
+		color: $gray;
+	}
+	a.planner_item, a.events {
+		display: block;
+		color: $gray;
+		i {
+			color: $lightGray;
+		}
+		&:hover{
+			text-decoration: none;
+			background-color: $lightestPink;
+			i {
+				color: $pink;
+			}
+		}
+	}
+	.planner_item {
+		border-top: 1px solid $lightGray;
+	}
+	.item-container {
+		width: 90%;
+		display: inline-block;
+	}
+	.talk_room {
+		text-transform: uppercase;
+		color: $gray;
+	}
+	.talk_title {
+		color: $purple;
+		font-weight: 500;
+	}
+	.speaker {
+		color: $textGray;
+		font-weight: 500;
+	}
+	.forward-arrow {
+		position: absolute;
+		padding-top: 8%;
+		width: 8%;
+		text-align: right;
+		display: inline-block;
+	}
+}
+
