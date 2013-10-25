@@ -1,7 +1,7 @@
 .tab-pane id="#{day.code}" class=('active' if day.active?)
   .events.pre-events
     .time-row
-      h3.time Pre-event     
+      h3.time Pre-event
     - day.pre_events.each do |e|
       a
         .planner-item.event
