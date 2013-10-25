@@ -48,14 +48,20 @@ html.no-js lang="#{data.site.lang}"
 
   body class=(page_classes)
 
-    .navbar.navbar-inverse.navbar-fixed-top
+    .navbar.navbar-inverse
       .navbar-inner
         .container
           a.btn.btn-navbar data-toggle="collapse" data-target=".nav-collapse"
             span.icon-bar
             span.icon-bar
             span.icon-bar
-          a.brand href="#" #{data.site.title}
+          .col-md-6.header-identity
+            = link_to image_tag('images/hub-logo.png', alt: 'multifaceted', :class=>'header-logo'), 'http://www.multifaceted.io'
+          .col-md-3.col-md-offset-3.miami-tips
+            h2 New to Miami?
+            p We’ve prepared a list of places for food, drinks and hangs that we think you’d really enjoy.  
+            button.btn.btn-primary.btn-lg check it out
+          
           .nav-collapse.collapse
             ul.nav
               li.active: a href="#" Home
