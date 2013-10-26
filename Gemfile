@@ -14,3 +14,8 @@ gem "compass-rgbapng"
 gem "sassy-buttons"
 gem "slim"
 gem "redcarpet"
+gem "nokogiri"
+
+group :development do
+  gem "pry"
+end

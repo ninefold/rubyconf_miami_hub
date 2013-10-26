@@ -1,0 +1,16 @@
+- wrap_layout :layout do
+  .col-md-9
+    h1.text-center = talk.title
+    .byline.text-center
+      | A talk by 
+      span.speaker-name = talk.speaker
+    .talk-abstract
+      == yield
+    .talk-video
+      iframe width="560" height="315" rel="false" src="//www.youtube.com/embed/KLLITgzCn4w" frameborder="0" allowfullscreen
+    == partial '/talk_preview', :object => talk.preview if talk.preview
+    h2 Talk Notes
+    == partial '/talk_notes_summary', :collection => talk.notes
+
+
+

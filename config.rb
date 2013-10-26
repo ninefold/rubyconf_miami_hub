@@ -49,9 +49,9 @@ activate :livereload
 #   end
 # end
 
-require 'helpers/planner'
-require 'helpers/talk_helper'
-helpers TheHub::Helpers
+require 'lib/the_hub'
+
+activate :the_hub
 
 helpers do
   def days
