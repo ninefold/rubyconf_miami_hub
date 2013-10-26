@@ -1,0 +1,10 @@
+- wrap_layout :layout
+  .col-md-9
+    h1.text-center
+      | Talk notes on 
+      = link_to current_resource.talk_title, current_resource.talk
+    h2
+      | Contributed by 
+      = current_resource.author
+    == yield
+    = link_to "Back to \"#{current_resource.talk_title}\"", current_resource.talk
