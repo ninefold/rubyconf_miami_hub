@@ -3,7 +3,7 @@
     .time-row
       h3.time Pre-event
     - day.pre_events.each do |e|
-      a
+      = link_to '/' + e.path do
         .planner-item.event
           h3 = e.title
           .event-location = e.location

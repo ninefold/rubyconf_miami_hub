@@ -15,6 +15,10 @@ with_layout :talk_layout do
   page "/talks/*"
 end
 
+with_layout :event_layout do
+  page "/events/*"
+end
+
 # Per-page layout changes:
 #
 # With no layout
