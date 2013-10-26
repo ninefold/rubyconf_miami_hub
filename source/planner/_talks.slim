@@ -1,9 +1,9 @@
 - talks.sorted_talks.each do |t|
-  a.planner_item class=*planner_classes(t.data)
-    div.item-container
-      .talk_room == t.data.room
-      .talk_title == t.data.title
-      | by&nbsp;
-      span.speaker == t.data.speaker
-    div.forward-arrow
-      <i class="fa fa-chevron-right"></i>
+  == link_to '/' + t.path, :class => planner_classes(t.data).join(" ")
+      div.item-container
+        .talk_room == t.data.room
+        .talk_title == t.data.title
+        | by&nbsp;
+        span.speaker == t.data.speaker
+      div.forward-arrow
+        <i class="fa fa-chevron-right"></i>

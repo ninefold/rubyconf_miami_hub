@@ -11,6 +11,10 @@
 # Page options, layouts, aliases and proxies
 ###
 
+with_layout :talk_layout do
+  page "/talks/*"
+end
+
 # Per-page layout changes:
 #
 # With no layout
@@ -46,6 +50,7 @@ activate :livereload
 # end
 
 require 'helpers/planner'
+require 'helpers/talk_helper'
 helpers TheHub::Helpers
 
 helpers do
@@ -54,7 +59,7 @@ helpers do
   end
 
   def planner_classes(metadata)
-    [planner_type(metadata), planner_room(metadata)]
+    ['planner_item', planner_type(metadata), planner_room(metadata)]
   end
 
   def planner_type(metadata)

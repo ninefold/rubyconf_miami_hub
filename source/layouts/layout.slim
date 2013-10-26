@@ -88,7 +88,11 @@ html.no-js lang="#{data.site.lang}"
               button.btn type="submit" Sign in
 
     .container
-      == yield
+
+      section.row
+        == yield
+        .col-md-3#sidebar
+          == partial 'planner'
 
       hr
 

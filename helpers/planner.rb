@@ -173,6 +173,10 @@ module TheHub
         :room    => data.room
       }
     end
+
+    def path
+      @resource.path
+    end
   end
 
   class Event < Item
