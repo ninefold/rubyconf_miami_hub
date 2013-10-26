@@ -3,6 +3,7 @@ require_relative 'planner'
 require_relative 'notes'
 require_relative 'event'
 require_relative 'resource'
+require_relative 'tip'
 module TheHub
   class Extension < Middleman::Extension
 
@@ -21,7 +22,7 @@ module TheHub
       @app.breakouts.merge! options.breakouts
       @app.rooms.concat options.rooms
 
-      [TheHub::Talk, TheHub::Notes, TheHub::Event].each do |resource|
+      [TheHub::Talk, TheHub::Notes, TheHub::Event, TheHub::Tip].each do |resource|
         @app.sitemap.register_resource_list_manipulator("the_hub_#{resource}", TheHub::Resource.new(resource))
       end
     end
@@ -54,6 +55,10 @@ module TheHub
         else
           raise "Not an event."
         end
+      end
+
+      def tips
+        sitemap.find_resource_by_path('miami-tips.html').children
       end
 
       def talk

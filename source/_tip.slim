@@ -1,0 +1,7 @@
+h2 == tip.title
+span.contributed_by
+  | Contributed by 
+  = tip.contributor
+== image_tag tip.image, :alt => tip.title
+== tip.render(:layout => false)
+
