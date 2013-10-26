@@ -1,12 +1,7 @@
 module TheHub
   module Event
-    def self.manipulate_resource_list(resources)
-      resources.each do |r|
-        if r.path =~ /^events\/[^\/]+\.html$/
-          r.extend TheHub::Event
-        end
-      end
-    end
+
+    SELECTOR = /^events\/[^\/]+\.html$/
 
     def title
       data[:title]

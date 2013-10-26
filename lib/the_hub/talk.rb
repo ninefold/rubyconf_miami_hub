@@ -1,13 +1,6 @@
 module TheHub
   module Talk
-
-    def self.manipulate_resource_list(resources)
-      resources.each do |r|
-        if r.path =~ /^talks\/[^\/]+\.html$/
-          r.extend TheHub::Talk
-        end
-      end
-    end
+    SELECTOR = /^talks\/[^\/]+\.html$/
 
     def title
       data[:title]
