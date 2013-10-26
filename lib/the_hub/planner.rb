@@ -1,6 +1,5 @@
 require_relative 'day'
 
-
 module TheHub
   class Planner
     def initialize days, sitemap

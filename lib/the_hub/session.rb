@@ -1,8 +1,8 @@
 module TheHub
   class Session
     attr_accessor :time
-    def initialize time, day, query
-      @time, @day, @query = time, day, query
+    def initialize time, day, app, query
+      @time, @day, @app, @query = time, day, app, query
     end
 
     def type
@@ -16,15 +16,15 @@ module TheHub
     end
 
     def sorted_talks
-      TheHub::ROOMS.map {|r| talks_by_room r}.compact
+      @app.rooms.map {|r| talks_by_room r}.compact
     end
 
     def talks
-      query.where(:type => 'talk').all.map {|t| TalkItem.new t}
+      query.where(:type => 'talk').all
     end
 
     def breakout
-      TheHub::BREAKOUTS.fetch(@day, {})[@time]
+      @app.breakouts.fetch(@day, {})[@time]
     end
 
     def query
@@ -32,9 +32,8 @@ module TheHub
     end
 
     def keynote
-      TalkItem.new query.where(:type => 'keynote').first if query.where(:type => 'keynote').first
+      query.where(:type => 'keynote').first
     end
-
 
     def to_hash
       {

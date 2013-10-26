@@ -17,6 +17,10 @@ module TheHub
       data[:speaker]
     end
 
+    def room
+      data[:room]
+    end
+
     def preview
       @app.preview_for_talk(eponymous_directory_path)
     end

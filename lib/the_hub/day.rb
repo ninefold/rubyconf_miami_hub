@@ -23,9 +23,9 @@ module TheHub
     end
 
     def sessions
-      if TheHub::SESSIONS[name.downcase.to_sym]
-        TheHub::SESSIONS[name.downcase.to_sym].map do |time|
-         Session.new time, name.downcase.to_sym, query
+      if @sitemap.app.sessions[code.to_sym]
+        @sitemap.app.sessions[code.to_sym].map do |time|
+         Session.new time, code.to_sym, @sitemap.app, query
         end
       else
         []
@@ -41,7 +41,7 @@ module TheHub
     end
 
     def events
-      query.where(:type => 'event').all.map {|e| Event.new e}
+      query.where(:type => 'event').all
     end
 
     def to_hash

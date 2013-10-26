@@ -51,13 +51,34 @@ activate :livereload
 
 require 'lib/the_hub'
 
-activate :the_hub
+activate :the_hub do |h|
+  h.days = %w{ Thursday Friday Saturday Sunday}
+
+  h.sessions = {
+    :friday => [ '8:00 AM', '10:00 AM', '11:00 AM', '11:10 AM', '11:55 AM', '1:10 PM',
+                 '1:55 PM', '2:05 PM', '2:50 PM', '3:00 PM', '3:45 PM', '4:15 PM',
+                 '5:00 PM', '5:10 PM', '6:00PM', '7:00 PM', '9:00 PM'
+  ],
+  :saturday => [ '8:00 AM', '10:00 AM', '10:45 AM', '10:55 AM', '11:40 AM', '12:55 PM',
+                 '1:40 PM', '1:50 PM', '2:35 PM', '2:45 PM', '3:30 PM', '4:00 PM',
+                 '4:45 PM', '4:55 PM', '7:00 PM', '9:00 PM'
+  ]
+  }
+
+  h.breakouts = {
+    friday: {'8:00 AM' => 'Registration',
+             '11:00 AM' => 'Break',
+             '11:55 AM' => 'Lunch',
+             '1:55 PM' => 'Break',
+             '2:50 PM' => 'Break',
+             '3:45 PM' => 'Break',
+             '5:00 PM' => 'Break'
+  }
+    }
+  h.rooms = ['Salon 1', 'Salon 2', 'Poinciana']
+end
 
 helpers do
-  def days
-    %w{ Thursday Friday Saturday Sunday}
-  end
-
   def planner_classes(metadata)
     ['planner_item', planner_type(metadata), planner_room(metadata)]
   end
