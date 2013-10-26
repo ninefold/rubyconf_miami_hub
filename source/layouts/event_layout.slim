@@ -1,8 +1,8 @@
 - wrap_layout :layout do
-  .col-md-9.col-offset-md-9
-    h1
+  .col-md-9
+    h1.text-center
       = event.title
       = " (SOLD OUT)" if event.sold_out?
-    h2 Organized by #{event.organizer}
-    .event-location = event.location
+    h2.text-center Organized by #{event.organizer}
+    .event-location.text-center = event.location
     == yield
