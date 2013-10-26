@@ -4,13 +4,13 @@
     .byline.text-center
       | A talk by 
       span.speaker-name = talk.speaker
+    .talk-details.text-center
+      | In the #{talk.room} room, at #{talk.session} on #{talk.day}
     .talk-abstract
       == yield
-    .talk-video
-      iframe width="560" height="315" rel="false" src="//www.youtube.com/embed/KLLITgzCn4w" frameborder="0" allowfullscreen
+    - if talk.video
+      .talk-video
+        iframe width="560" height="315" rel="false" src="//www.youtube.com/embed/#{talk.video}" frameborder="0" allowfullscreen
     == partial '/talk_preview', :object => talk.preview if talk.preview
     h2 Talk Notes
     == partial '/talk_notes_summary', :collection => talk.notes
-
-
-

@@ -5,4 +5,5 @@ speaker: Xavier Shay
 room: Salon 1
 day: Friday
 session: 2:05 PM
+video: JyylrAlGKNc
 ---

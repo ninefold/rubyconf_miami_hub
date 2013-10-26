@@ -6,6 +6,18 @@ module TheHub
       data[:title]
     end
 
+    def session
+      data[:session]
+    end
+
+    def day
+      data[:day]
+    end
+
+    def video
+      data[:video]
+    end
+
     def speaker
       data[:speaker]
     end
