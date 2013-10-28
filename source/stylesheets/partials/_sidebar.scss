@@ -28,7 +28,7 @@
 	color: $gray;
 	text-transform: uppercase;
 	font-weight: 600;
-	padding: 10px 18px 10px 17px;
+	padding: 10px 17px 10px 17px;
 	&:hover {
 		color: $green;
 	}
@@ -48,7 +48,7 @@
 	margin: 30px 0 0 0;
 }
 
-.planner-item, .session {
+.planner-item, .session, .event {
 	border-bottom:1px solid $lightGray;
 	background-color: $white;
 }
@@ -77,7 +77,7 @@ a.event:hover {
 		font-size: 14px;
 		color: $darkGray;
 	}
-	a.planner_item, a.events {
+	a.planner_item, a.event {
 		display: block;
 		color: $gray;
 		i {

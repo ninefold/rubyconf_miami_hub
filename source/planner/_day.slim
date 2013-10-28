@@ -3,10 +3,12 @@
     .time-row
       h3.time Pre-event
     - day.pre_events.each do |e|
-      = link_to '/' + e.path do
-        .planner-item.event
-          h3 = e.title
-          .event-location = e.location
+      = link_to '/' + e.path, :class => 'planner_item event' do
+          .item-container
+            h3 = e.title
+            .event-location = e.location
+          .forward-arrow
+            <i class="fa fa-chevron-right"></i>  
   - day.sessions.each do |s|
     .session
       .time-row
