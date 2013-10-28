@@ -1,8 +1,13 @@
 @import "layouts.scss";
 
 #sidebar {
-	background-color: $lightestGray;
-	padding-top: 50px;
+	background-color: $darkPurple;
+	padding: 50px 20px;
+	border: 1px solid $lightGray;
+	border-top: none;
+	.sidebar-intro {
+		color: $white;
+	}
 }
 
 .title-sidebar {
@@ -14,12 +19,19 @@
 	border: 1px solid $lightGray;
 
 	li {
-		margin-left: 0;
+		margin-left: 0 !important;
 	}
 }
 
 .nav-pills > li >a {
 	border-radius: 0;
+	color: $gray;
+	text-transform: uppercase;
+	font-weight: 600;
+	padding: 10px 18px 10px 17px;
+	&:hover {
+		color: $green;
+	}
 } 
 
 .nav-pills > li.active > a {
