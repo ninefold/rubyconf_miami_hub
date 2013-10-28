@@ -97,8 +97,9 @@ html.no-js lang="#{data.site.lang}"
 
       hr
 
-      footer
-        p &copy; #{data.site.title} #{Time.now.year}
+  footer
+    .container
+      p &copy; #{data.site.title} #{Time.now.year}
 
 
     == javascript_include_tag 'main'
