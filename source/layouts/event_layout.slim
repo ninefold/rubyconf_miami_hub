@@ -3,6 +3,6 @@
     h1.text-center
       = event.title
       = " (SOLD OUT)" if event.sold_out?
-    h2.text-center Organized by #{event.organizer}
+    h2.text-center.event-organizer Organized by #{event.organizer}
     .event-location.text-center = event.location
     == yield
