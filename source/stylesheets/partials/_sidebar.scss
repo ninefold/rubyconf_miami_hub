@@ -57,13 +57,25 @@
 	padding: 10px 20px;
 }
 
+.pre-events a {
+	text-decoration:none;
+	h3 {
+		color: $purple;
+	}
+}
+
+a.event:hover {
+	background-color: $lightPurple;
+
+}
+
 .session, .events {
 	.time-row {
 		background-color: $lightestGreen;
 	}
 	h3 {
 		font-size: 14px;
-		color: $gray;
+		color: $darkGray;
 	}
 	a.planner_item, a.events {
 		display: block;
@@ -73,9 +85,13 @@
 		}
 		&:hover{
 			text-decoration: none;
-			background-color: $lightestPink;
+			background-color: $lightGreen;
+			color: $white;
+			.talk_room {
+				color: $lightGray;
+			}
 			i {
-				color: $pink;
+				color: $white;
 			}
 		}
 	}
