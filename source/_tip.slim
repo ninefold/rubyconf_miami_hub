@@ -1,7 +1,12 @@
-h2 == tip.title
-span.contributed_by
-  | Contributed by 
-  = tip.contributor
-== image_tag tip.image, :alt => tip.title
-== tip.render(:layout => false)
+.col-md-10.col-md-offset-1
+	.row.tips-mod
+		.col-md-8
+			h2.tips-title == tip.title
+			span.contributed_by
+			  | Contributed by 
+			  = tip.contributor
+			== tip.render(:layout => false)
+		.col-md-4
+			== image_tag tip.image, :alt => tip.title
+
 
