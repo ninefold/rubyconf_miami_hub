@@ -1,6 +1,13 @@
 .btn-primary {
 	background-color: $pink;
 	border: 1px solid $darkPurple;
+	font-size: 15px;
+	font-weight: 400;
+
+	&:hover {
+		background-color: $lightPink;
+		border: 1px solid $pink;
+	}
 }
 
 .btn {
