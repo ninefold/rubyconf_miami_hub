@@ -9,4 +9,5 @@
 
 # Make sure your secret_key_base is kept private
 # if you're sharing your code publicly.
-RubyconfMiamiHub::Application.config.secret_key_base = '0a57d0050a12b3e1b4b6251754f1b925f2b58605194b3c460b45bf3357b4908c9b906d223ddcc1cae7f18f2f4086c78cc65b023c0b214b21c22ce7b0d0bfd56a'
+RubyconfMiamiHub::Application.config.secret_key_base = ENV['SECRET_TOKEN']
+RubyconfMiamiHub::Application.config.secret_token = ENV['SECRET_TOKEN']
