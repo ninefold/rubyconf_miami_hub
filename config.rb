@@ -19,6 +19,9 @@ with_layout :event_layout do
   page "/events/*"
 end
 
+
+page "/talks/*/summary.html", :layout => false
+
 with_layout :notes_layout do
   page "/talks/*/notes/*"
 end
