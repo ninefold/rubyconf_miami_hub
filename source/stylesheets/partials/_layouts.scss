@@ -61,9 +61,9 @@ a {
 
 // Navigation
 .navbar {
-	height: 246px;
+	height: 203px;
 	background-color: $black;
-	background-image: url('../images/header-facet.png');
+	background-image: url('../images/header-facet-2.png');
 	background-repeat: no-repeat;
 	background-position: center top;
 	margin-bottom: 0;
@@ -73,6 +73,12 @@ a {
 
 .header-identity {
 	float: left;
+	padding-top: 26px;
+}
+
+.header-ninefold {
+	text-align: right;
+	padding-top: 14px;
 }
 
 .miami-tips-text {
