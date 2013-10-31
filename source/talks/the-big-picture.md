@@ -1,0 +1,20 @@
+---
+type: talk
+title: The Big Picture
+speaker: Jim Weirich
+room: Salon 2
+day: Saturday
+session: 1:50 PM
+---
+
+## About the speaker
+
+Jim Weirich first learned about computers when his college adviser suggested he take a computer science course: "It will be useful, and you might enjoy it." With those prophetic words, Jim has been developing now for over 25 years, working with everything from crunching rocket launch data on supercomputers to wiring up servos and LEDs on micro-controllers. Currently he loves working in Ruby and Rails as the Chief Scientist at Neo, but you can also find him strumming on his ukulele as time permits.
+
+## Talk Abstract
+
+They say a picture is worth a thousand words. Does that mean a diagram is worth a thousand lines of code? Maybe.
+
+Most Rubyists don't bother with drawing diagrams. We've found that our code is so expressive, that the need to explain the code in high level diagrams is greatly reduced. But greatly reduced doesn't mean never. There are times when a well drawn diagram can help us visualize the global properties of a program that are hard to see when looking at the individual source files.
+
+Since Rubyists don't draw diagrams, we aren't aware of the rich meaning that a good diagram can convey. In this where we learn that UML is not a four letter word, but is just another tool in a well rounded developer's tool chest. Diagrams are not about big design up front, but about conveying meaning to other developers. Come join us and learn to see the big picture.

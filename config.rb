@@ -73,7 +73,10 @@ activate :the_hub do |h|
   :saturday => [ '8:00 AM', '10:00 AM', '10:45 AM', '10:55 AM', '11:40 AM', '12:55 PM',
                  '1:40 PM', '1:50 PM', '2:35 PM', '2:45 PM', '3:30 PM', '4:00 PM',
                  '4:45 PM', '4:55 PM', '7:00 PM', '9:00 PM'
-  ]
+  ],
+  :sunday => [ '8:00 AM', '10:00 AM', '10:45 AM', '10:55 AM', '11:40 AM', '12:55 PM',
+                '1:40 PM', '1:50 PM', '2:35 PM', '2:45 PM', '3:30 PM', '4:00 PM', '5:00 PM',
+                '5:10 PM']
   }
 
   h.breakouts = {
@@ -83,9 +86,30 @@ activate :the_hub do |h|
              '1:55 PM' => 'Break',
              '2:50 PM' => 'Break',
              '3:45 PM' => 'Break',
-             '5:00 PM' => 'Break'
-  }
-    }
+             '5:00 PM' => 'Break',
+             '7:00 PM' => 'Birds of a Feather'
+  },
+   saturday: {'8:00 AM' => 'Registration',
+              '10:45 AM' => 'Break',
+              '11:40 AM' => 'Lunch',
+              '1:40 PM''Break',
+              '2:35 PM''Break',
+              '3:30 PM' 'Break',
+              '4:45 PM' 'Break',
+              '4:55 PM' 'Lightning Talks',
+              '7:00 PM' 'Birds of a Feather'
+},
+    sunday: {'8:00 AM' => 'Registration',
+              '10:45 AM' => 'Break',
+              '11:40 AM' => 'Lunch',
+              '1:40 PM' => 'Break',
+              '2:35 PM' => 'Break',
+              '3:30 PM' => 'Break',
+              '4:00 PM' => 'Questions for Matz',
+              '5:00 PM' => 'Closing'
+
+
+
   h.rooms = ['Salon 1', 'Salon 2', 'Poinciana']
 end
 
