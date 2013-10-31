@@ -1,12 +1,15 @@
 - wrap_layout :layout do
   .col-md-9
     .row.template-header.text-center
-	    h1
-	      = event.title
-	      = " (SOLD OUT)" if event.sold_out?
-	    .byline 
-	    	| Organized by 
-	    	span.event-organizer = event.organizer
-	    .event-location 
-	    	<i class="fa fa-map-marker"></i>&nbsp; #{event.location}
-    	== yield
+      h1
+        = event.title
+        = " (SOLD OUT)" if event.sold_out?
+      .byline
+        | Organized by 
+        span.event-organizer = event.organizer
+      .event-location
+        i.fa.fa-map-marker
+        |  #{event.location}
+    section.col-md-10.col-md-offset-1
+      .event-description
+       == yield
