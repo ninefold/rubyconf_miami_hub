@@ -1,6 +1,6 @@
 ---
 type: talk
-title: Visualizing Garbage Collection in Rubinius, JRuby and Ruby 2.0
+title: "Visualizing Garbage Collection in Rubinius, JRuby and Ruby 2.0"
 speaker: Pat Shaughnessy
 room: Poinciana
 day: Saturday

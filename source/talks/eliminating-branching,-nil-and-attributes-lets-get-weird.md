@@ -1,7 +1,7 @@
 ---
 type: talk
-title: Eliminating branching, nil and attributes - let's get weird
-speaker: ❺➠ David Copeland
+title: "Eliminating branching, nil and attributes - let's get weird"
+speaker: David Copeland
 room: Salon 2
 day: Sunday
 session: 12:55 PM

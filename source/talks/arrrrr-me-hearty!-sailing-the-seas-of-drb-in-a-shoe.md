@@ -1,6 +1,6 @@
 ---
 type: talk
-title: Arrrr me hearty! Sailing the Seas of DRb in a Shoe
+title: "Arrrr me hearty! Sailing the Seas of DRb in a Shoe"
 speaker: Davy Stevenson & Eric Hodel & Rein Henrichs
 room: Salon 2
 day: Saturday
