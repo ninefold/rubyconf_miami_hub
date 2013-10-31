@@ -92,13 +92,13 @@ activate :the_hub do |h|
    saturday: {'8:00 AM' => 'Registration',
               '10:45 AM' => 'Break',
               '11:40 AM' => 'Lunch',
-              '1:40 PM''Break',
-              '2:35 PM''Break',
-              '3:30 PM' 'Break',
-              '4:45 PM' 'Break',
-              '4:55 PM' 'Lightning Talks',
-              '7:00 PM' 'Birds of a Feather'
-},
+              '1:40 PM' => 'Break',
+              '2:35 PM' => 'Break',
+              '3:30 PM' => 'Break',
+              '4:45 PM' => 'Break',
+              '4:55 PM' => 'Lightning Talks',
+              '7:00 PM' => 'Birds of a Feather'
+  },
     sunday: {'8:00 AM' => 'Registration',
               '10:45 AM' => 'Break',
               '11:40 AM' => 'Lunch',
@@ -107,8 +107,8 @@ activate :the_hub do |h|
               '3:30 PM' => 'Break',
               '4:00 PM' => 'Questions for Matz',
               '5:00 PM' => 'Closing'
-
-
+  }
+}
 
   h.rooms = ['Salon 1', 'Salon 2', 'Poinciana']
 end
