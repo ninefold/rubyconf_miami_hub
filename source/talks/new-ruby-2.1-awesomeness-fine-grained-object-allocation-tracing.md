@@ -1,6 +1,6 @@
 ---
 type: talk
-title: New Ruby 2.1 Awesomeness: Fine-grained Object Allocation Tracing
+title: "New Ruby 2.1 Awesomeness: Fine-grained Object Allocation Tracing"
 speaker: Sam Rawlins
 room: Salon 1
 day: Saturday

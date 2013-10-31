@@ -1,6 +1,6 @@
 ---
 type: talk
-title: Being Boring: A Survival Guide to Ruby Cryptography
+title: "Being Boring: A Survival Guide to Ruby Cryptography"
 speaker: Tony Arcieri
 room: Poinciana
 day: Sunday

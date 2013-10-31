@@ -1,6 +1,6 @@
 ---
 type: talk
-title: Raft: Consensus for Rubyists
+title: "Raft: Consensus for Rubyists"
 speaker: Patrick Van Stee
 room: Poinciana
 day: Saturday

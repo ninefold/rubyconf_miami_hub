@@ -1,6 +1,6 @@
 ---
 type: talk
-title: Becoming a Software Engineer: Inspiring a New Generation of Developers
+title: "Becoming a Software Engineer: Inspiring a New Generation of Developers"
 speaker: Kinsey Ann Durham
 room: Salon 2
 day: Sunday

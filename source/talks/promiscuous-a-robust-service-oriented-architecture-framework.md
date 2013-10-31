@@ -1,6 +1,6 @@
 ---
 type: talk
-title: Promiscuous: A robust service-oriented architecture framework
+title: "Promiscuous: A robust service-oriented architecture framework"
 speaker: Nicolas Viennot & Kareem Kouddous
 room: Poinciana
 day: Sunday
