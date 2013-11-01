@@ -4,6 +4,7 @@ title: That's Not Very Ruby of You
 speaker: Ernie Miller
 session: 10:00 AM
 day: Saturday
+room: main
 ---
 
 ## About the Speaker
