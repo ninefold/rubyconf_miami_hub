@@ -1,8 +1,9 @@
 / OH GOD I'M SO SORRY. I SWEAR I'LL FIX IT./
-a.planner_item.keynote
-	.item-container
-		.talk_room == keynote.keynote.data.room
-		.talk_title == keynote.keynote.data.title
-		.speaker == keynote.keynote.data.speaker
-  	div.forward-arrow
-    	<i class="fa fa-chevron-right"></i>
+= link_to keynote.keynote do
+  .planner_item.keynote
+	  .item-container
+		  .talk_room == keynote.keynote.data.room
+		  .talk_title == keynote.keynote.data.title
+		  span.speaker == keynote.keynote.data.speaker
+  	  div.forward-arrow
+    	  <i class="fa fa-chevron-right"></i>
