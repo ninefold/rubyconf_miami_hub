@@ -1,7 +1,11 @@
 .pre-talk-summary
-  h2 Talk Preview
-  == talk_preview.render(:layout => false)
-  .link-out
-    | More on 
-    == link_to 'multifaceted.io', talk_preview.data.link
-    |.
+  .media
+    = image_tag talk_preview.image, :class => "pull-left media-object", :alt => "Preview Image"
+    .media-body
+      .media-heading
+        h2 = talk_preview.title
+      = talk_preview.render(:layout => false)
+      .link-out
+        == link_to talk_preview.data.link do
+          i.fa.fa-video-camera
+          |  Read more and watch the interview on multifaceted.io
