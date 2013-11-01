@@ -24,12 +24,12 @@ All of the content sits inside the `source/` directory.
 ### Talks
 Talks live in the `source/talks` directory. They are free text which makes up the content above the talk preview on each of the talk pages. It's in Markdown format. Go ahead and edit as you see fit to make it better.
 
-For more details, look at the [README for talks](talks/README.md)
+For more details, look at the [README for talks](source/talks/README.md)
 
 ### Events
 Events live in the `source/events` directory. Just like talks, they're free text. Again, they're in Markdown, and there there to be added to and edited to make them better.
 
-For more details, look at the [README](events/README.md).
+For more details, look at the [README](source/events/README.md).
 
 <!--### Tips (Super Sekrit Feature)
 Tips aren't fully implemented yet, but they live in `source/miami_tips`. They work much the same as talks and events.
