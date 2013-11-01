@@ -15,5 +15,5 @@
         .talk-video.text-center
           iframe width="560" height="315" rel="false" src="//www.youtube.com/embed/#{talk.video}" frameborder="0" allowfullscreen
       == partial '/talk_preview', :object => talk.preview if talk.preview
-      h2 Talk Notes
-      == partial '/talk_notes_summary', :collection => talk.notes
+      /h2 Talk Notes
+      /== partial '/talk_notes_summary', :collection => talk.notes
