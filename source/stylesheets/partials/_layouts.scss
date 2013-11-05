@@ -166,6 +166,15 @@ a {
 	}
 }
 
+.twitter-multi {
+	background-color: $white;
+	padding: 20px 20px;
+	border-radius: 3px;
+	p {
+		font-weight: 800;
+	}	
+}
+
 // Tips 
 .tips-mod {
 	border-top: 1px solid $lightGray;
