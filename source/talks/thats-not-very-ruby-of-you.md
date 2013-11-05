@@ -3,7 +3,7 @@ type: keynote
 title: That's Not Very Ruby of You
 speaker: Ernie Miller
 session: 10:00 AM
-day: Saturday
+day: Sunday
 room: main
 ---
 
