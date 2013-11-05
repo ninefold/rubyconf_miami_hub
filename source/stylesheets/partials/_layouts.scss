@@ -52,7 +52,7 @@ a {
 
 // Social Content Container
 .contribute {
-	height: 50px;
+	height: 92px;
 	padding: 10px 0 0 20px;
 	border-bottom: 1px solid $lightGray;
 	text-align: center;
@@ -167,7 +167,8 @@ a {
 }
 
 .twitter-multi {
-	background-color: $white;
+	background-color: $lightGray;
+	margin-top: 50px;
 	padding: 20px 20px;
 	border-radius: 3px;
 	p {
