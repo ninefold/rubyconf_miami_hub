@@ -3,11 +3,10 @@
       div.item-container
         .talk_room == t.data.room
         .talk_title == t.data.title
-        | by&nbsp;
         span.speaker
           = t.data.speaker
           - if t.preview
             |  
-            i.fa.fa-star
+            i.fa.fa-video-camera
       div.forward-arrow
         <i class="fa fa-chevron-right"></i>
