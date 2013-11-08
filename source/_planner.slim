@@ -2,7 +2,7 @@
 	h2.title-sidebar access all the content
 	p All the videos, slides, pics, tweets, speaker interviews and more, for every talk at RubyConf 2013 - all in one place. Explore it all below.
 
-ul.nav.nav-pills#plannerTab
+ul.nav.nav-pills.nav-justified#plannerTab
   - planner.days.each do |day|
     li class=('active' if day.active?)
       a href='##{day.code}' data-toggle="pill"

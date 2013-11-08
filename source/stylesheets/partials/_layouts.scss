@@ -81,7 +81,7 @@ a {
 
 // Navigation
 .navbar {
-	height: 203px;
+	min-height: 203px;
 	background-color: $black;
 	background-image: url('../images/header-facet-2.png');
 	background-repeat: no-repeat;
