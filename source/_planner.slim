@@ -4,7 +4,7 @@
 
 ul.nav.nav-pills.nav-justified#plannerTab
   - planner.days.each do |day|
-    li class=('active' if day.active?)
+    li class=('active' if day.active?(current_resource))
       a href='##{day.code}' data-toggle="pill"
         == day.shortname
 

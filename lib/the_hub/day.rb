@@ -14,8 +14,12 @@ module TheHub
       @name.downcase
     end
 
-    def active?
-      @name == 'Friday'
+    def active? page
+      if page.respond_to? :day
+        page.day == @name
+      else
+        @name == 'Friday'
+      end
     end
 
     def query

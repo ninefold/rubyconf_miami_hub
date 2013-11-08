@@ -15,6 +15,10 @@ module TheHub
       data[:when] == 'post'
     end
 
+    def day
+      data[:day]
+    end
+
     def location
       data[:location]
     end
