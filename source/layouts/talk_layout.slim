@@ -15,8 +15,13 @@
         .talk-video.text-center
           iframe width="560" height="315" rel="false" src="//www.youtube.com/embed/#{talk.video}" frameborder="0" allowfullscreen
       == partial '/talk_preview', :object => talk.preview if talk.preview
-      /h2 Talk Notes
-      /== partial '/talk_notes_summary', :collection => talk.notes
+      h2 Talk Notes
+      .talk-notes-promo
+        | Add your talk notes by <a
+        = link_to 'forking The Hub', 'https://github.com/mootpointer/rubyconf_miami_hub'
+        |  and adding them in a Pull Request. Ninefold are giving away $100 free hosting per talk (for up to 5 talks). 
+        = link_to 'See the terms and conditions.', '/terms.html'
+      == partial '/talk_notes_summary', :collection => talk.notes
     .col-md-10.col-md-offset-1
       .twitter-multi
           p We're setting up live video Google Q+A sessions with many of the speakers a week after the conference closes. Please follow us to find out when you can ask your burning questions!
