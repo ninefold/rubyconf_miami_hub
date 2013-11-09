@@ -183,6 +183,30 @@ a {
 	}	
 }
 
+// Notes
+
+.notes {
+  h2 {
+    font-size: 20px;
+    text-transform: none;
+  }
+
+  h3 {
+    font-size: 16px;
+    font-family: $sansSerifFont;
+    font-weight: 800;
+  }
+
+  h4 {
+    @extend h2;
+    font-size: 12px;
+  }
+
+  img {
+    max-width: 600px;
+  }
+}
+
 // Tips 
 .tips-mod {
 	border-top: 1px solid $lightGray;

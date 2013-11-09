@@ -6,5 +6,6 @@
     h2
       | Contributed by 
       = current_resource.author
-    == yield
+    .notes
+      == yield
     = link_to "Back to \"#{current_resource.talk_title}\"", current_resource.talk
