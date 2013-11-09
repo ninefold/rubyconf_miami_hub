@@ -2,6 +2,29 @@
 
 This is the code which builds the [RubyConf Miami Hub](http://rubyconf13.multifaceted.io). It's built using [middleman](http://middlemanapp.com) and is designed for easy contribution. If you're interested in how it works, check out the code which drives the extension.
 
+## Adding talk notes
+
+You don't really need to understand how the whole system works to add talk
+notes. Simply fork the repo and do this in your fork:
+
+1. Copy the notes from our example talk to the directory of the talk your notes
+   are for (in our case, it's Xavier Shay's talk on profiling ruby)
+   ```
+   $ cp source/talks/example-talk/notes/example.md source/talks/profiling-ruby/notes/my-notes.md
+   ```
+2. Edit your notes, remembering to change the author name. (everything below the
+   last `---` is just markdown)
+3. Add the file to git
+   ```
+   $ git add source/talks/profiling-ruby/notes/my-notes.md
+   ```
+4. Push it up and make a pull request!
+
+After that, we'll look at your notes, and merge them into the hub!
+
+Don't forget, Ninefold are giving away credit to people who contribute to the
+hub. If you're interested, [here are the terms](http://rubyconf13.multifaceted.io/terms.html).
+
 ## Installing
 
 It should be pretty simple to get this going:
