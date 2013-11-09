@@ -18,7 +18,7 @@ module TheHub
       if page.respond_to? :day
         page.day == @name
       else
-        @name == 'Friday'
+        @name == 'Saturday'
       end
     end
 
