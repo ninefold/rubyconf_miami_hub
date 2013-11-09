@@ -49,7 +49,7 @@ Announced at the conference.
 
 ### Thoughts
 #### Robot Sentience vs Robot Friendliness
-[!Chart](img/chart.jpg "Chart")
+![Chart](img/chart.jpg "Chart")
 #### Jokes with Asmimov's 3 Rules, explaining humans make their own fate.
 
 Contest Announcement
