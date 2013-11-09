@@ -53,10 +53,12 @@ html.no-js lang="#{data.site.lang}"
               span.icon-bar
             .collapse.navbar-collapse#nav-collapse
               ul.nav.navbar-nav
-                li class=('active' if current_page == "index.html")
-                  = link_to 'Home', '/index.html'
-                li class=('active' if current_page == "planner.html")
-                = link_to 'Planner', "/planner.html"
+                li class=('active' if current_page == "/index.html")
+                  = link_to "/index.html" do
+                    | Home
+                li class=('active' if current_page == "/planner.html")
+                  = link_to "/planner.html" do
+                    | Planner
           / .col-md-3.col-md-offset-3.miami-tips-text
             h2 New to Miami?
             p Getting around, eating, drinking, merriment, all the hangs, shark safety - all you need to know. 
