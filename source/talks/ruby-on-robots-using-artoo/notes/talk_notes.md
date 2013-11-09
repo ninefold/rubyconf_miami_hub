@@ -44,12 +44,16 @@ Handle controlling with a PS/3 Controller
 Controlling multiple drones with the same code - Crazyflie Nano Quadcopter
 
 ### Cylon.js Coffee/Javascript Announced earlier
+
 ### Announce GOBOT - GO programming language for robots.
 Announced at the conference.
 
 ### Thoughts
+
 #### Robot Sentience vs Robot Friendliness
+
 ![Chart](img/chart.jpg "Chart")
+
 #### Jokes with Asmimov's 3 Rules, explaining humans make their own fate.
 
 Contest Announcement
