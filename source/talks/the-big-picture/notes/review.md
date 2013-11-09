@@ -1,7 +1,5 @@
 ---
-link: http://multifaceted.io/2013/rubyconf-13-preview-jim-weirich/
-title: The Big Picture
-author: Jim Weirich
+author: Brian Loomis (@djdarkbeat)
 ---
 
 From the beginning Jim Weirich engaged us with an in depth review of Edward Hopper's painting Nighthawks.  Weirich gives us his insights of the noir of Nighthawks and spent the beginning of the talk expounding on the beauty that pictures can tell us and the depth of understanding that can be gained from studying a diagram.
