@@ -1,6 +1,7 @@
 ---
-author: Michael Pelz-Sherman
+author: Michael Pelz-Sherman (@mpelzsherman)
 ---
+# Notes
 
 This talk was aimed at beginner/intermediate developers, but many experienced debs don’t know about these libraries either. (I didn't!)
 
@@ -59,7 +60,7 @@ Forwarding is good for building Facades
 
 lots of other devs on github have build extensions on top of the std lib
 
-### feedback
+# feedback
 
 This talk moved a bit too fast for me, and got a bit off track at times. I think it would have been more effective to show some complete code examples using just the standard library, rather than showing how to work around its deficiencies. It would have been nice to show some clear examples of when to use delegation vs. forwarding. But the basic message was great; there's a lot of very useful stuff in the standard Ruby library that can be used "out of the box", and the source code is enlightening to look at.
 
