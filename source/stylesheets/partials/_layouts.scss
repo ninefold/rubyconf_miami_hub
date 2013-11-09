@@ -186,6 +186,11 @@ a {
 // Notes
 
 .notes {
+  h1 {
+    font-family: $sansSerifFont;
+    font-size: 24px;
+  }
+
   h2 {
     font-size: 20px;
     text-transform: none;
