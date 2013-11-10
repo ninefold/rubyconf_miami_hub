@@ -62,7 +62,8 @@ cosine - periodic
 
 data collection - (for instance loading many translations of the Bible)
 
-vectors:
+vectors in "The quick brown fox"
 * character count distribution
-* stems
-* two others... (slides should be available at link above)
+* stems (th, br, ox, qui, fo, own)
+* words (The, brown, quick, fox)
+* letter frequency ({ b: 1, c: 1, o: 2, ... })
