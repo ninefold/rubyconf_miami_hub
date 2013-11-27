@@ -1,0 +1,11 @@
+.col-md-8.col-md-offset-1
+  h1.text-center Talk Videos from RubyConf '13
+  ul.video-list.list-group
+  - videos.each do |talk|
+    li.video-link.list-group-item
+      h3
+        i.fa.fa-video-camera
+        |  
+        = link_to talk.title, talk
+      .video-speaker
+        = talk.speaker

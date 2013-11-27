@@ -4,6 +4,7 @@ title: Effective Debugging
 speaker: Jonathan Wallace
 room: Salon 1
 day: Friday
+video: ri2JcQ4Qp80
 session: 4:15 PM
 ---
 

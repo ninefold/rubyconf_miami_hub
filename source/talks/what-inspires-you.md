@@ -4,6 +4,7 @@ title: Under The Influence?
 speaker: Zachary Scott
 room: Poinciana
 day: Friday
+video: Ahx4fbLtBNQ
 session: 1:10 PM
 ---
 

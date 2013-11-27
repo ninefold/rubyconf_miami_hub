@@ -1,140 +1,157 @@
 @import "layouts.scss";
 
 #sidebar {
-	background-color: $darkPurple;
-	padding: 40px 20px 20px 20px;
-	border: 1px solid $lightGray;
-	border-top: none;
-	.sidebar-intro {
-		color: $white;
-	}
+  background-color: $darkPurple;
+  padding: 40px 20px 20px 20px;
+  border: 1px solid $lightGray;
+  border-top: none;
+  .sidebar-intro {
+    color: $white;
+  }
 }
 
 .title-sidebar {
-	@extend h2;
+  @extend h2;
 }
 
 .nav-pills {
-	background-color: $lightestGray;
-	border: 1px solid $lightGray;
+  background-color: $lightestGray;
+  border: 1px solid $lightGray;
 
-	li {
-		margin-left: 0 !important;
-	}
+  li {
+    margin-left: 0 !important;
+  }
 }
 
 .nav-pills > li >a {
-	border-radius: 0;
-	color: $gray;
-	text-transform: uppercase;
-	font-weight: 600;
-	padding: 10px 0;
-	&:hover {
-		color: $green;
-	}
-} 
+  border-radius: 0;
+  color: $gray;
+  text-transform: uppercase;
+  font-weight: 600;
+  padding: 10px 0;
+  &:hover {
+    color: $green;
+  }
+}
 
 .nav-pills > li.active > a {
-	background-color: $green;
-	border: 1px solid $darkGreen;
-	&:hover {
-		background-color: $lightGreen;
-		border: 1px solid $green;
-	}
+  background-color: $green;
+  border: 1px solid $darkGreen;
+  &:hover {
+    background-color: $lightGreen;
+    border: 1px solid $green;
+  }
 }
 
 .tab-pane {
-	border: 1px solid $lightGray;
-	margin: 30px 0 0 0;
+  border: 1px solid $lightGray;
+  margin: 30px 0 0 0;
 }
 .breakout {
-	background-color: $lightestPink;
+  background-color: $lightestPink;
 }
 
 .planner-item, .session, .event {
-	border-bottom:1px solid $lightGray;
-	background-color: $white;
+  border-bottom:1px solid $lightGray;
+  background-color: $white;
 }
 
 .time-row, .planner_item, .event {
-	padding: 10px 20px;
+  padding: 10px 20px;
 }
 
 .pre-events a {
-	text-decoration:none;
-	h3 {
-		color: $purple;
-	}
+  text-decoration:none;
+  h3 {
+    color: $purple;
+  }
 }
 
 a.event:hover {
-	background-color: $lightPurple;
+  background-color: $lightPurple;
 
+}
+
+.qandas {
+  .item-container {
+    background-color: $lightestGreen;
+    padding: 10px 20px;
+  }
+  h3 {
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: $lightGray;
+  }
+}
+
+.qanda-title {
+  color: $textGray;
+  font-weight: 500;
 }
 
 .session, .events {
-	.time-row {
-		background-color: $lightestGreen;
-	}
-	h3 {
-		font-size: 14px;
-		color: $darkGray;
-	}
-	a.planner_item, a.event {
-		display: block;
-		color: $gray;
-		i {
-			color: $gray;
-		}
-		&:hover{
-			text-decoration: none;
-			background-color: $lightGreen;
-			color: $white;
-			.talk_room {
-				color: $lightGray;
-			}
-			.talk_title {
-				color: $darkPurple;
-			}
-			i {
-				color: $white;
-			}
-		}
-	}
-	.planner_item {
-		border-top: 1px solid $lightGray;
-	}
-	.item-container {
-		width: 90%;
-		display: inline-block;
-	}
-	.talk_room {
-		text-transform: uppercase;
-		color: $gray;
-	}
-	.talk_title {
-		color: $purple;
-		font-weight: 500;
-	}
-	.speaker {
-		color: $textGray;
-		font-weight: 500;
-	}
-	.forward-arrow {
-		position: absolute;
-		padding-top: 8%;
-		width: 8%;
-		text-align: right;
-		display: inline-block;
-	}
+  .time-row {
+    background-color: $lightestGreen;
+  }
+  h3 {
+    font-size: 14px;
+    color: $darkGray;
+  }
+  a.planner_item, a.event {
+    display: block;
+    color: $gray;
+    i {
+      color: $gray;
+    }
+    &:hover{
+      text-decoration: none;
+      background-color: $lightGreen;
+      color: $white;
+      .talk_room {
+        color: $lightGray;
+      }
+      .talk_title {
+        color: $darkPurple;
+      }
+      i {
+        color: $white;
+      }
+    }
+  }
+  .planner_item {
+    border-top: 1px solid $lightGray;
+  }
+  .item-container {
+    width: 90%;
+    display: inline-block;
+  }
+  .talk_room {
+    text-transform: uppercase;
+    color: $gray;
+  }
+  .talk_title {
+    color: $purple;
+    font-weight: 500;
+  }
+  .speaker {
+    color: $textGray;
+    font-weight: 500;
+  }
+  .forward-arrow {
+    position: absolute;
+    padding-top: 8%;
+    width: 8%;
+    text-align: right;
+    display: inline-block;
+  }
 }
 
 .ninefold {
-	background-color: $black;
-	height: 100px;
-	text-align: right;
+  background-color: $black;
+  height: 100px;
+  text-align: right;
 }
 
 .crafted {
-	padding: 20px 20px 0 0;
+  padding: 20px 20px 0 0;
 }

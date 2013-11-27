@@ -4,6 +4,7 @@ title: Extending CRuby with native Graph data type
 speaker: Andy Pliszka
 room: Salon 1
 day: Friday
+video: BjGa3dWGXCs
 session: 5:10 PM
 ---
 

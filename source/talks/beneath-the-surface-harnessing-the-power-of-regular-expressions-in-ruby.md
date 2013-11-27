@@ -4,6 +4,7 @@ title: "Beneath The Surface: Harnessing the True Power of Regular Expressions in
 speaker: Nell Shamrell
 room: Poinciana
 day: Friday
+video: JfwS4ibJFDw
 session: 5:10 PM
 ---
 

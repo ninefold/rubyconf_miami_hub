@@ -4,6 +4,7 @@ title: "\"Bioruby\"...understanding the intricacies of 'Life' using Ruby"
 speaker: Doel Sengupta & Manu Singhal
 room: Poinciana
 day: Friday
+video: aMvA7lhHN7c
 session: 4:15 PM
 ---
 

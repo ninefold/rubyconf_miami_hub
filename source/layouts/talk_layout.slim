@@ -9,11 +9,11 @@
         <i class="fa fa-map-marker"></i>&nbsp;
         | In the #{talk.room} room, at #{talk.session} on #{talk.day}  
     .col-md-10.col-md-offset-1
-      .talk-abstract
-        == yield
       - if talk.video
         .talk-video.text-center
           iframe width="560" height="315" rel="false" src="//www.youtube.com/embed/#{talk.video}" frameborder="0" allowfullscreen
+      .talk-abstract
+        == yield
       == partial '/talk_preview', :object => talk.preview if talk.preview
       h2 Talk Notes
       .talk-notes-promo

@@ -42,23 +42,22 @@ html.no-js lang="#{data.site.lang}"
     .navbar.navbar-inverse
       .navbar-inner
         .container
-          .col-md-6.header-identity
-            = link_to image_tag('images/header-logo.png', alt: 'multifaceted', :class=>'header-logo img-responsive'), '/'
-          .col-md-3.col-md-offset-3.header-ninefold
-            = link_to image_tag('images/header-lovingly.png', alt: 'ninefold', :class=>'hidden-xs hidden-sm'), 'http://www.ninefold.com'
-          .visible-xs
-            .button.navbar-toggle data-toggle="collapse" data-target="#nav-collapse"
+          .row
+            .col-md-6.header-identity
+              = link_to image_tag('images/header-logo.png', alt: 'multifaceted', :class=>'header-logo img-responsive'), '/'
+            .col-md-3.col-md-offset-3.header-ninefold
+              = link_to image_tag('images/header-lovingly.png', alt: 'ninefold', :class=>'hidden-xs hidden-sm'), 'http://www.ninefold.com'
+          .row
+            .button.navbar-toggle.btn.btn-navbar data-toggle="collapse" data-target="#nav-collapse"
               span.icon-bar
               span.icon-bar
               span.icon-bar
             .collapse.navbar-collapse#nav-collapse
               ul.nav.navbar-nav
                 li class=('active' if current_page == "/index.html")
-                  = link_to "/index.html" do
-                    | Home
-                li class=('active' if current_page == "/planner.html")
-                  = link_to "/planner.html" do
-                    | Planner
+                  = link_to "Home", "/index.html"
+                li
+                  = link_to "Talk Videos", "/videos.html"
           / .col-md-3.col-md-offset-3.miami-tips-text
             h2 New to Miami?
             p Getting around, eating, drinking, merriment, all the hangs, shark safety - all you need to know. 

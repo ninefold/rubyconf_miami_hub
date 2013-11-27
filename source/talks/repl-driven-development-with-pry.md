@@ -4,6 +4,7 @@ title: REPL driven development with Pry
 speaker: Conrad Irwin
 room: Salon 1
 day: Friday
+video: D9j_Mf91M0I
 session: 3:00 PM
 ---
 

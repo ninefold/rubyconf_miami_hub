@@ -70,6 +70,10 @@ module TheHub
         end
       end
 
+      def videos
+        sitemap.where(:type => 'talk').order_by(:title).all.select {|talk| talk.video }
+      end
+
       def preview_for_talk path
         sitemap.find_resource_by_path(path + 'summary.html')
       end
