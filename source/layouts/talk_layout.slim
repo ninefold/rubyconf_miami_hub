@@ -1,27 +1,27 @@
 - wrap_layout :layout do
-  .col-md-9
+  .col-md-8.col-lg-7
     .row.template-header
-      h1.text-center = talk.title
+      h1.talk-title.text-center = talk.title
       .byline.text-center
         | A talk by 
         span.speaker-name = talk.speaker
       .talk-details.text-center
         <i class="fa fa-map-marker"></i>&nbsp;
         | In the #{talk.room} room, at #{talk.session} on #{talk.day}  
-    .col-md-10.col-md-offset-1
-      - if talk.video
-        .talk-video.text-center
-          iframe width="560" height="315" rel="false" src="//www.youtube.com/embed/#{talk.video}" frameborder="0" allowfullscreen
-      .talk-abstract
-        == yield
-      == partial '/talk_preview', :object => talk.preview if talk.preview
-      h2 Talk Notes
-      .talk-notes-promo
-        | Add your talk notes by <a
-        = link_to 'forking The Hub', 'https://github.com/mootpointer/rubyconf_miami_hub'
-        |  and adding them in a Pull Request. Ninefold are giving away $100 free hosting per talk (for up to 5 talks). 
-        = link_to 'See the terms and conditions.', '/terms.html'
-      == partial '/talk_notes_summary', :collection => talk.notes
+      .col-lg-10.col-lg-offset-1.col-md-12
+        - if talk.video
+          .talk-video.text-center
+            iframe width="560" height="315" rel="false" src="//www.youtube.com/embed/#{talk.video}" frameborder="0" allowfullscreen
+        .talk-abstract
+          == yield
+        == partial '/talk_preview', :object => talk.preview if talk.preview
+        h2 Talk Notes
+        .talk-notes-promo
+          | Add your talk notes by <a
+          = link_to 'forking The Hub', 'https://github.com/mootpointer/rubyconf_miami_hub'
+          |  and adding them in a Pull Request. Ninefold are giving away $100 free hosting per talk (for up to 5 talks). 
+          = link_to 'See the terms and conditions.', '/terms.html'
+        == partial '/talk_notes_summary', :collection => talk.notes
     .col-md-10.col-md-offset-1
       .twitter-multi
           p We're setting up live video Google Q+A sessions with many of the speakers a week after the conference closes. Please follow us to find out when you can ask your burning questions!
@@ -29,3 +29,4 @@
           <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
   .col-md-4.col-lg-3.col-lg-offset-1#sidebar
     == partial 'sidebar'
+

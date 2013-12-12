@@ -151,18 +151,24 @@ a {
 
 // Talks 
 
-.talk-details, .event-location {
-	color: $purple;
+body.talks #sidebar {
+	margin-top: 50px;
 }
-
-.byline {
-	color:$darkGray;
-	font-size: 16px;
-	padding-bottom: 10px;
+.talk-title {
+	margin: 40px 0 20px;
 }
-
+.talk-video {
+	margin: 40px 0;
+}
+.byline,
+.talk-details,
+.event-location {
+	font-size: 15px;
+	color: $gray;
+	margin-bottom: 5px;
+}
 .speaker-name, .contributor, .event-organizer {
-	color: $pink;
+	color: $purple;
 	font-weight: 600;
 }
 
