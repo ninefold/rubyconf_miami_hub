@@ -193,38 +193,74 @@ body.talks #sidebar {
 
 // Videos
 
-.video-link {
-  h3 {
-    @extend h2;
-    text-transform: none;
-  }
+ul.video-list {
+	list-style: none;
+	padding: 0;
+	h2 {
+		color: $darkPurple;
+	}
+	li {
+		position: relative;
+		background: #fcfcfc;
+		padding: 20px 60px 20px 20px;
+		box-shadow: 1px 1px 1px rgba(0,0,0,0.05);
+		margin: 0 0 5px 0;
+	}
+	.video-speaker {
+		color: #888;
+	}
+	i.fa-chevron-right {
+		right: 40px;
+		position: absolute;
+		top: 50%;
+		height: 14px;
+		margin-top: -7px;
+		color: #eee;
+		font-size: 20px;
+		transition: 0.2s all
+	}
+
+	// Hover
+
+	a:hover {
+		text-decoration: none;
+		h2 {
+			color: $purple
+		}
+		li {
+			background: #fff;
+		}
+		i.fa-chevron-right {
+			right: 30px;
+			color: $purple;
+		}
+	}
 
 }
-
 
 // Notes
 
 .notes {
-  h1 {
-    font-family: $sansSerifFont;
-    font-size: 24px;
-  }
+  // h1 {
+  //   font-family: $sansSerifFont;
+  //   font-size: 24px;
+  // }
 
-  h2 {
-    font-size: 20px;
-    text-transform: none;
-  }
+  // h2 {
+  //   font-size: 20px;
+  //   text-transform: none;
+  // }
 
-  h3 {
-    font-size: 16px;
-    font-family: $sansSerifFont;
-    font-weight: 800;
-  }
+  // h3 {
+  //   font-size: 16px;
+  //   font-family: $sansSerifFont;
+  //   font-weight: 800;
+  // }
 
-  h4 {
-    @extend h2;
-    font-size: 12px;
-  }
+  // h4 {
+  //   @extend h2;
+  //   font-size: 12px;
+  // }
 
   img {
     max-width: 600px;

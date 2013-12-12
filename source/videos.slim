@@ -1,14 +1,17 @@
-.col-md-8.col-md-offset-1
-  h1.text-center Talk Videos from RubyConf '13
-  ul.video-list.list-group
-  - videos.each do |talk|
-    li.video-link.list-group-item
-      h3
-        i.fa.fa-video-camera
-        |  
-        = link_to talk.title, talk
-      .video-speaker
-        = talk.speaker
+.col-md-12
+  h1 Talk Videos from RubyConf '13
+.col-md-8.col-lg-9
+  ul.video-list
+    - videos.each do |talk|
+      = link_to talk do
+        li.video-link
+          i.fa.fa-chevron-right
+          h2
+            / i.fa.fa-video-camera
+            |  
+            = talk.title
+          .video-speaker
+            = talk.speaker
 .col-md-4.col-lg-3#sidebar
   == partial 'sidebar'
 
