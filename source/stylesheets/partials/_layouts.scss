@@ -87,14 +87,16 @@ a {
 }
 
 // Navigation
+
+#navigation {
+	background: #333;
+}
 .navbar {
-	min-height: 203px;
 	background-color: $black;
 	background-image: url('../images/header-facet-2.png');
 	background-repeat: no-repeat;
 	background-position: center top;
 	margin-bottom: 0;
-	padding-top: 40px;
 	border-radius: 0;
 
   li {
@@ -103,14 +105,9 @@ a {
   }
 }
 
-.header-identity {
-	float: left;
-	padding-top: 26px;
-}
-
+.header-identity,
 .header-ninefold {
-	text-align: right;
-	padding-top: 14px;
+	padding: 40px 0;
 }
 
 .miami-tips-text {

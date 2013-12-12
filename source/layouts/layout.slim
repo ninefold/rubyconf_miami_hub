@@ -40,13 +40,14 @@ html.no-js lang="#{data.site.lang}"
   body class=(page_classes)
 
     .navbar.navbar-inverse
-      .navbar-inner
-        .container
-          .row
-            .col-md-6.header-identity
-              = link_to image_tag('images/header-logo.png', alt: 'multifaceted', :class=>'header-logo img-responsive'), '/'
-            .col-md-3.col-md-offset-3.header-ninefold
-              = link_to image_tag('images/header-lovingly.png', alt: 'ninefold', :class=>'hidden-xs hidden-sm'), 'http://www.ninefold.com'
+      .container
+        .row
+          .col-md-6.header-identity
+            = link_to image_tag('images/header-logo.png', alt: 'multifaceted', :class=>'header-logo img-responsive'), '/'
+          .col-md-3.col-md-offset-3.header-ninefold
+            = link_to image_tag('images/header-lovingly.png', alt: 'ninefold', :class=>'hidden-xs hidden-sm'), 'http://www.ninefold.com'
+      #navigation
+        .container   
           .row
             .button.navbar-toggle.btn.btn-navbar data-toggle="collapse" data-target="#nav-collapse"
               span.icon-bar
@@ -58,6 +59,8 @@ html.no-js lang="#{data.site.lang}"
                   = link_to "Home", "/index.html"
                 li
                   = link_to "Talk Videos", "/videos.html"
+                li
+                  = link_to "Q&A", "#"
           / .col-md-3.col-md-offset-3.miami-tips-text
             h2 New to Miami?
             p Getting around, eating, drinking, merriment, all the hangs, shark safety - all you need to know. 
