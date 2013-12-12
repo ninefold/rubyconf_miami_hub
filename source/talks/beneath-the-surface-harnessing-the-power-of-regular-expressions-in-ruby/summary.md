@@ -1,6 +1,7 @@
 ---
 link: http://multifaceted.io/2013/rubyconf-13-preview-nell-shamrell/
 title: Nell Shamrell on Ruby Regexes and Understanding Power
+Video: http://youtu.be/JfwS4ibJFDw
 ---
 
 Nell talks with Andrew Harvey about how her talk comes from a journey of
