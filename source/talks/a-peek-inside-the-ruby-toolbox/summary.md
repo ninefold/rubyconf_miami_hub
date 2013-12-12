@@ -1,6 +1,7 @@
 ---
 link: http://multifaceted.io/2013/rubyconf-13-preview-loren-segal/
 title: Loren Segal On Static Analysis
+Video: http://www.youtube.com/watch?v=RkTtyo2kydg
 ---
 
 Loren Segal talks with Multifaceted about static analysis and his search for its
