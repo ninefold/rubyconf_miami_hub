@@ -1,6 +1,7 @@
 ---
 title: Kinsey Ann Durham on Becoming a Rubyist
 link: http://multifaceted.io/2013/rubyconf-13-preview-kinsey-ann-durham/
+video: http://youtu.be/fXUMRXa6xf0
 ---
 
 Kinsey Ann Durham talks with Multifaceted about her experience becoming a
