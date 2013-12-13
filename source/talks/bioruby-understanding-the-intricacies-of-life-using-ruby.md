@@ -6,6 +6,7 @@ room: Poinciana
 day: Friday
 video: aMvA7lhHN7c
 session: 4:15 PM
+
 ---
 
 ## About the speaker
