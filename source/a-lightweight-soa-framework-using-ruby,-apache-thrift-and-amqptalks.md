@@ -5,6 +5,7 @@ speaker: Stephen Henrie
 room: Salon 2
 day: Saturday
 session: 12:55 PM
+Video: http://youtu.be/HTVoQ6_iVuc
 ---
 
 ## About the speaker
