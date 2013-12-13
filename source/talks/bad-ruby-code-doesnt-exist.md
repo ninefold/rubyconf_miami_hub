@@ -5,6 +5,7 @@ speaker: Matt Aimonetti
 room: Salon 2
 day: Sunday
 session: 2:45 PM
+video: http://youtu.be/tVkQATR9P00
 ---
 
 ## About the speaker
