@@ -6,6 +6,7 @@ day: Friday
 room: Poinciana
 video: KRuIXiq3eMc
 session: 2:05 PM
+video: http://youtu.be/KRuIXiq3eMc
 ---
 
 ## About the speaker
