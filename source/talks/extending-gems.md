@@ -5,6 +5,7 @@ speaker: Jason R Clark
 room: Salon 2
 session: 11:10 AM
 day: Friday
+video: http://youtu.be/Q1mk_9__roI
 ---
 
 ## About the speaker
