@@ -5,6 +5,7 @@ speaker: David Copeland
 room: Salon 2
 day: Sunday
 session: 12:55 PM
+video: http://youtu.be/inU7MEtI51g
 ---
 
 ## About the speaker
