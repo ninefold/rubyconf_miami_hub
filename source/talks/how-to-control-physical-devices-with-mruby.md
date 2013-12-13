@@ -5,6 +5,7 @@ speaker: Team Yamanekko (Yurie Yamane & Masayoshi Takahashi)
 room: Salon 2
 day: Saturday
 session: 2:45 PM
+video: http://youtu.be/iEkeDp70jvo
 ---
 
 ## About the speakers
