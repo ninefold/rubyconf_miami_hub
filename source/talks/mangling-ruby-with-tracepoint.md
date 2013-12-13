@@ -5,7 +5,7 @@ speaker: Mark Bates
 room: Salon 1
 day: Sunday
 session: 12:55 PM
----
+video: http://youtu.be/cxzUrT0slB0
 
 ## About the speaker
 
