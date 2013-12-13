@@ -5,6 +5,7 @@ speaker: Andrew Havens
 room: Salon 1
 day: Sunday
 session: 10:55 AM
+video: http://youtu.be/Cru9bq_xPQo
 ---
 
 ## About the speaker
