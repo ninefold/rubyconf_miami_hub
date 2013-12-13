@@ -5,6 +5,7 @@ speaker: Jerry D'Antonio
 room: Salon 1
 day: Saturday
 session: 12:55 PM
+video: http://youtu.be/VVmENBTc1jM
 ---
 
 ## About the speaker
