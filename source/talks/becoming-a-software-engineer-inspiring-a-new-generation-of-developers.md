@@ -5,6 +5,7 @@ speaker: Kinsey Ann Durham
 room: Salon 2
 day: Sunday
 session: 10:55 AM
+video: http://youtu.be/fXUMRXa6xf0
 ---
 
 ## About the speaker
