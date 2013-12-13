@@ -6,6 +6,7 @@ room: Poinciana
 day: Friday
 video: JfwS4ibJFDw
 session: 5:10 PM
+video: http://youtu.be/JfwS4ibJFDw
 ---
 
 ## About the speaker
