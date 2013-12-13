@@ -5,6 +5,7 @@ speaker: André Arko
 room: Salon 2
 day: Friday
 session: 1:10 PM
+video: http://youtu.be/-kyhz_VZMMM
 ---
 
 ## About The Speaker
