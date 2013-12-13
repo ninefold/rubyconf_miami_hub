@@ -6,6 +6,7 @@ room: Salon 1
 session: 1:10 PM
 video: iEkeDp70jvo
 day: Friday
+video: http://youtu.be/iEkeDp70jvo
 ---
 
 
