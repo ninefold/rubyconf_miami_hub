@@ -6,6 +6,7 @@ room: Salon 1
 day: Friday
 video: BjGa3dWGXCs
 session: 5:10 PM
+video: http://youtu.be/BjGa3dWGXCs
 ---
 
 
