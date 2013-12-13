@@ -6,6 +6,7 @@ room: Salon 1
 day: Friday
 video: ri2JcQ4Qp80
 session: 4:15 PM
+Video: http://youtu.be/T9JRsNJSpcs
 ---
 
 ## About the speaker
