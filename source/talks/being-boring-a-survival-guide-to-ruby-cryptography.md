@@ -5,6 +5,7 @@ speaker: Tony Arcieri
 room: Poinciana
 day: Sunday
 session: 1:50 PM
+video: http://youtu.be/e13irYP6WJA
 ---
 
 ## About the speaker
