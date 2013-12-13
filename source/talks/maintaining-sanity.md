@@ -5,6 +5,7 @@ speaker: Nathaniel Talbott
 room: Poinciana
 day: Sunday
 session: 12:55 PM
+video: http://www.youtube.com/watch?v=tamk2uMwW8A
 ---
 
 ## About the speaker
