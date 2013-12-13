@@ -5,6 +5,7 @@ speaker: Davy Stevenson & Eric Hodel & Rein Henrichs
 room: Salon 2
 day: Saturday
 session: 10:55 AM
+video: http://youtu.be/IlGD8lAUMoA
 ---
 
 ## About the speakers
