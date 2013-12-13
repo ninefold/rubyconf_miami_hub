@@ -5,6 +5,7 @@ speaker: Tom Stuart
 room: Salon 1
 day: Saturday
 session: 10:55 AM
+video: http://youtu.be/n_k6O50Nd-4
 ---
 
 ## About the speaker
